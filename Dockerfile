@@ -7,11 +7,12 @@ RUN set -xe \
     && apk add -U nodejs \
     && rm -rf /var/cache/apk/* 
 
-RUN npm install -g pm2    
+RUN npm install -g log4js    
 
 EXPOSE 8080
 
 VOLUME /app
+VOLUME /logs
 
 WORKDIR /app
 
