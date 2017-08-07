@@ -1,0 +1,4 @@
+#!/bin/sh
+echo ${APP}
+cd /app/${APP} 
+npm start
